@@ -18,7 +18,6 @@ from .models import CarModel, CarMake
 
 # Get an instance of a logger
 logger = logging.getLogger(__name__)
-initiate()
 
 # Create your views here.
 
