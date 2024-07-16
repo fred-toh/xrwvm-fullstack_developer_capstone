@@ -14,6 +14,8 @@ urlpatterns = [
          name='get_dealers_by_state'),
     path(route='dealer/<int:dealer_id>', view=views.get_dealer_details,
          name='dealer_details'),
+    path(route='get_inventory/<int:dealer_id>', view=views.get_inventory,
+         name='get_inventory'),
 
     # path for login
     path(route='login', view=views.login_user, name='login'),

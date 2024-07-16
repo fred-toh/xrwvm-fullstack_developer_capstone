@@ -74,6 +74,7 @@ return(
       <h1 style={{color:"grey"}}>{dealer.full_name}{postReview}</h1>
       <h4  style={{color:"grey"}}>{dealer['city']},{dealer['address']}, Zip - {dealer['zip']}, {dealer['state']} </h4>
       </div>
+      <div><a href={`/searchcars/${id}`} className="btn" style={{backgroundColor: "plum", margin:"10px"}} >SearchCars</a>	</div>
       <div class="reviews_panel">
       {reviews.length === 0 && unreviewed === false ? (
         <text>Loading Reviews....</text>
